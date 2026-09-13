@@ -1,0 +1,32 @@
+{
+    "name": "React Codespace",
+
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+    "waitFor": "postCreateCommand",
+
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+              "src/App.jsx"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "PKief.material-icon-theme"
+            ],
+            "settings": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveMode": "file"
+            }
+        }
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [3000]
+}
