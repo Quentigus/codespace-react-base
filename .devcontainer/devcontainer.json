@@ -16,6 +16,7 @@
                 "PKief.material-icon-theme"
             ],
             "settings": {
+                "workbench.iconTheme": "material-icon-theme",
                 "editor.defaultFormatter": "esbenp.prettier-vscode",
                 "editor.formatOnSave": true,
                 "editor.formatOnSaveMode": "file"
